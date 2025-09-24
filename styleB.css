@@ -1,0 +1,99 @@
+.container /*Container é a classe que bloco onde vai aparecer a legenda curipo*/
+{
+
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;   
+    flex-direction: column;
+
+    height: 100%;
+    width: 100%;
+}
+.containerTitulo
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+
+    background-color: rgb(227, 191, 88);
+    width: 80%;
+    height: 150px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+
+
+}
+.cube
+{
+
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;  
+
+
+    background-color: rgb(235, 231, 223);
+    width: 80%;
+    height: 700px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+
+
+}
+
+#box1
+{
+
+    display: flex;
+    justify-content: space-around; 
+    align-items: center; 
+    flex-direction: column;
+
+
+    background-color: rgb(245, 243, 240);
+    width: 70%;
+    height: 85%;
+    border-radius: 40px; 
+
+}
+
+#box2Vermelho
+{
+
+    background-color: rgb(223, 2, 2);
+    width: 50%;
+    height: 100px;
+    border-radius: 28px;
+
+    display: flex;
+    justify-content: space-around; 
+    align-items: center; 
+    flex-direction: column;
+
+}
+
+#box2Vermelho:hover
+{
+    background-color: brown;
+}
+
+
+.textoC
+{
+font-size: 70px;
+
+}
+
+.logo1
+{
+height: 120px;
+float: left;
+
+}
+
+h1
+{
+    font-size: 65px;
+}
+
