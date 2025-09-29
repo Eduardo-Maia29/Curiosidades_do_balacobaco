@@ -7,10 +7,10 @@
 
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="Logo_borracha.png" type="png">
-
-    <style> body{background-color: rgb(228, 219, 202);} </style>
+    
 </head>
-<body>
+<body class="darkmode">
+
     <br>
     <br>
     <br>
@@ -21,16 +21,17 @@
 
         <div class="cube">
             <div id="box1"> 
-                <div class="textoC"> "Curiosidades aleatoria"</div>
-                <div id="box2Vermelho"> <span style="color: aliceblue; font-size: xx-large; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Gerar Curiosidade aleatoria</span></div>
-
+                
+                <p class="textoC" id="saida"> Clique pra gerar uma Curiosidade</p>
+                <button id="box2Vermelho" onclick="GerarFrase()">
+                    <span class="class">Gerar Curiosidade aleatoria</span>
+                    <img src="Dado-removebg-preview.png" alt="" class="dado">
+                </button>
 
             </div>   
         </div>
+    <script src="Texto.js"></script>
 
-    </div>
-
-    
 </body>
-
 </html>
+
