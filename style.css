@@ -1,15 +1,15 @@
-:root
+:root /*Paleta de cores principal do site*/
 {
     --fundo: rgb(228, 219, 202);
     --Topo: rgb(227, 191, 88);
     --quad1: rgb(235, 231, 223);
     --quad2: rgb(248, 246, 242);
-    --botao: rgb(223, 2, 2)
-    
+    --botao: rgb(223, 2, 2);
+    --ClaroEscuro: rgb(131, 131, 131);
 
 }
 
-.darkmode
+.darkmode /*Paleta de cores do modo noturo do site*/
 {
     --fundo: rgb(24, 24, 24);
     --Topo: rgb(24, 24, 24);
@@ -17,19 +17,17 @@
     --quad2: rgb(48, 48, 48);
     --botao: rgb(223, 2, 2);
     --cor-titulo: rgb(227, 191, 88);
-    --cor-curiosidade: rgb(255, 255, 255)
+    --cor-curiosidade: rgb(255, 255, 255);
+    --ClaroEscuro: rgb(223, 204, 32);
 }
 
 body
 {
-    background-color: var(--fundo);
+    background-color: var(--fundo); /*Muda cor de fundo do site*/
 }
 
-
-
-.container /*Container é a classe que bloco onde vai aparecer a legenda curipo*/
+.container /*Container é a classe que centraliza todo o site*/
 {
-
     display: flex;
     justify-content: space-around; 
     align-items: center;   
@@ -38,10 +36,10 @@ body
     height: 100%;
     width: 100%;
 }
-.containerTitulo
+.containerTitulo /*Cria o cabeçalho amarelo*/
 {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex-direction: row;
     gap: 10px;
@@ -51,12 +49,22 @@ body
     height: 150px;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
-
-
 }
-.cube
-{
 
+.logo1 /*Logo ao lado do titulo do site*/
+{
+height: 100px;
+float: left;
+}
+
+h1 /*Modifica o titulo do site*/
+{
+    font-size: 65px;
+    color: var(--cor-titulo);
+}
+
+.cube /*Cria um espaço entre o fundo do site e o centro que aparece as curiosidades, meramente decorativo*/
+{
     display: flex;
     justify-content: space-around; 
     align-items: center;  
@@ -67,13 +75,10 @@ body
     height: 700px;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
-
-
 }
 
-#box1
+#box1 /*Espaço com texto curiosidades e com o botão*/
 {
-
     display: flex;
     justify-content: space-around; 
     align-items: center; 
@@ -84,16 +89,15 @@ body
     width: 70%;
     height: 85%;
     border-radius: 40px; 
-
 }
 
-#box2Vermelho
+#box2Vermelho /*Botão vermelho pra gerar curiosidades*/
 {
-
     background-color: var(--botao);
     width: 50%;
     height: 100px;
     border-radius: 28px;
+    border-color: rgb(122, 11, 11);
 
     display: flex;
     justify-content: center;
@@ -102,40 +106,55 @@ body
     cursor: pointer;
 }
 
-#box2Vermelho:hover
+#box2Vermelho:hover /*Muda cor quando passa o mouse em cima*/
 {
     background-color: brown;
 }
 
 
-.textoC
+.textoC /*Texto principal do site*/
 {
 color: var(--cor-curiosidade);
 font-size: 60px;
 text-align: center;
-
 }
 
-.logo1
-{
-height: 100px;
-float: left;
-}
-
-h1
-{
-    font-size: 65px;
-    color: var(--cor-titulo);
-}
-
-.dado
+.dado /*Imagem do dado no botão vermelho*/
 {
     height: 50px;
     float: left;
 }
-.class
+.class /*Muda fonte, tamanho e cor do texto dentro do botão*/
 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 30px;
     color: aliceblue;
+}
+
+#theme-switch /*Classe responsavel por dar o formato do botão de troca de modo claro-escuro*/
+{
+    display: flex;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    justify-content: center;
+    padding: 0;
+    align-items: center;
+    position:absolute;
+    right: 12%;
+    border: none;
+    cursor: pointer;
+    background-color: var(--ClaroEscuro)
+}
+#theme-switch svg:last-child /*O botão tem duas imagens, essa some com a imagem de sol*/
+{
+    display: none;
+}
+.darkmode #theme-switch svg:first-child /*O botão tem duas imagens, essa some com a imagem de Lua*/
+{
+    display: none;
+}
+.darkmode #theme-switch svg:last-child /*Posiciona o sol no centro da imagem*/
+{
+    display: block;
 }
