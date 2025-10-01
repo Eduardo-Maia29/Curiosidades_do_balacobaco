@@ -46,7 +46,7 @@ const frases = /*Essas sao todas as curiosidades, pelo menos por enquanto*/
  "A primeira aparição do homem aranha foi em Amazing Fantasy #15, o preço do gibi original pode chegar até 200 mil doláres",
  "A primeira aparição do Superman foi em Action Comics #1, o valor do gibi original pode chegar até 6 milhões de doláres",
  "Anatidaefobia é o medo constante de ser observado por patos",
- "Cerca de 379 já morreram tentando tirar uma selfie",
+ "Cerca de 379 pessoas já morreram tentando tirar uma selfie",
  "A mira dos cowboys era tão ruim que se eles quisessem acertar a cabeça de alguem, deveriam mirar no joelho",
  "Um ser humano pode sobreviver no maximo 11 dias sem dormir",
  "Salto alto originalmente era uma calçado masculino",
@@ -69,3 +69,4 @@ function themeswitch() { /*Troca a classe do body para darkmode*/
   var element = document.body;
   element.classList.toggle("darkmode");
 }
+
