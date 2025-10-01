@@ -40,7 +40,7 @@ const frases = /*Essas sao todas as curiosidades, pelo menos por enquanto*/
  "As pegadas dos astronautas ainda estão na Lua",
  "Nesse planeta ja nasceram cerca de 117 bilhões de humanos",
  "Um homem chamado Tsutomu Yamaguchi foi a única pessoa a conseguir sobreviver aos ataques de Hiroshima e Nagazaki",
- "A pessoa mais alta do mundo tinh a 2,72m e calçava algo em torno de 76",
+ "A pessoa mais alta do mundo tinha 2,72m e calçava algo em torno de 76",
  "A maior árvore do Brasil tinha 88 metros, o equivalente a um prédio de 30 andares ou o a altura do Cristo Redentor sem o pedestal",
  "Pra evitar que os jogadores tenham noção da passagem de tempo, Las Vegas evita colocar relogios para mante-los focados",
  "A primeira aparição do homem aranha foi em Amazing Fantasy #15, o preço do gibi original pode chegar até 200 mil doláres",
@@ -69,5 +69,6 @@ function themeswitch() { /*Troca a classe do body para darkmode*/
   var element = document.body;
   element.classList.toggle("darkmode");
 }
+
 
 
