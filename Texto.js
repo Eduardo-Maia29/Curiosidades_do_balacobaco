@@ -27,7 +27,7 @@ const frases = /*Essas sao todas as curiosidades, pelo menos por enquanto*/
  "Jujubas são feitas a partir de substâncias com colágeno, como cartilagens, tendões, ossos e aparas de couro e, portanto, é um produto de origem animal.",
  "As cerdas da escada rolante tem como função evitar que alguém fique muito proximo da lateral da escada",
  "O furo na tampa da caneta evita que alguém sufoque caso engula a tampa por acidente",
- "O DNA do chimpanzé tem semlhança de 98,8% com o DNA dos seres-humanos",
+ "O DNA do chimpanzé tem semelhança de 98,8% com o DNA dos seres-humanos",
  "Porcos tem uma inteligencia comparavel ao de uma criança humana de 3 anos",
  "Um dos primeiros filmes a ter cenas pós-créditos foi Muppets - O Filme (1979)",
  "No filme O Maskara, Jim Carrey com suas caras e bocas fez a produção economizar milhares de doláres",
@@ -69,4 +69,5 @@ function themeswitch() { /*Troca a classe do body para darkmode*/
   var element = document.body;
   element.classList.toggle("darkmode");
 }
+
 
