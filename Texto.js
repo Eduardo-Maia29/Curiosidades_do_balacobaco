@@ -30,7 +30,7 @@ const frases = /*Essas sao todas as curiosidades, pelo menos por enquanto*/
  "O DNA do chimpanzé tem semelhança de 98,8% com o DNA dos seres-humanos",
  "Porcos tem uma inteligencia comparavel ao de uma criança humana de 3 anos",
  "Um dos primeiros filmes a ter cenas pós-créditos foi Muppets - O Filme (1979)",
- "No filme O Maskara, Jim Carrey com suas caras e bocas fez a produção economizar milhares de doláres",
+ "No filme O Maskara, Jim Carrey com suas caras e bocas fez a produção economizar milhares de doláres em efeitos especiais",
  "O maior nome brasileiro registrado é o de Charlingtonglaevionbeecheknavare dos Anjos Mendonça",
  "O material mais leve do mundo é o aerogel de grafeno, que é sete vezes mais leve que o ar. O material é composto por 99,8% de ar e é tão forte quanto o aço",
  "O buraco mais profundo do mundo encontra-se na Russia e tem 12,2km de profundidade",
@@ -69,6 +69,7 @@ function themeswitch() { /*Troca a classe do body para darkmode*/
   var element = document.body;
   element.classList.toggle("darkmode");
 }
+
 
 
 
